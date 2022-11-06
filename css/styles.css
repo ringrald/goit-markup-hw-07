@@ -7,6 +7,19 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --primary-text-color: #212121;
+  --main-background-color: #f5f5f5;
+  --active-accent: #2196f3;
+  --text-link-color: #757575;
+  --hero-background: #2f303a;
+  --accent-color: #ffffff;
+  --inactive-buttons: #f5f4fa;
+  --portfolio-border: #eeeeee;
+  --footer-text: rgba(255, 255, 255, 0.6);
+  --header-line: #ececec;
+}
+
 .page {
   color: var(--primary-text-color);
   font-family: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -34,12 +47,23 @@ ul {
   padding: 0%;
   margin: 0%;
 }
+
+.container {
+  width: 1200px;
+  margin: auto auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 main {
   background-color: var(--main-background-color);
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .bar {
   display: flex;
@@ -49,6 +73,7 @@ main {
   background-color: var(--accent-color);
   border-bottom: 1px solid var(--header-line);
 }
+
 .logo-picture {
   font-family: Raleway, sans-serif;
   letter-spacing: 0.03em;
@@ -111,6 +136,12 @@ main {
 .hero-section {
   background-color: var(--hero-background);
   text-align: center;
+  padding: 200px 0px;
+}
+.hero-container {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-title {
   color: var(--accent-color);
@@ -121,7 +152,7 @@ main {
   font-size: 44px;
   line-height: 1.4;
   vertical-align: top;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 header,
 main {
@@ -155,8 +186,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 8px;
-  padding-bottom: 56px;
-  min-width: 73px;
+  margin-bottom: 50px;
 }
 
 .portfolio-examples button {
@@ -215,17 +245,17 @@ main {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.what-we-do {
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
 
+.what-we-do {
+  padding-top: 0%;
+}
 .h2-title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .what-we-do-img {
@@ -251,11 +281,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-.gallery-items h2,
-.gallery-items p {
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .our-team {
@@ -293,13 +318,16 @@ main {
 .no-gap {
   display: block;
 }
-
+.gallery-items li {
+  width: 370px;
+}
 .gallery-items h2 {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .gallery-items p {
   font-weight: 400;
@@ -310,17 +338,12 @@ main {
 
 .border {
   border: 1px solid var(--portfolio-border);
-  width: 370px;
+  padding: 20px 24px;
 }
 footer {
   background-color: var(--hero-background);
-}
-.footer-content {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer-content.logo-picture {
-  margin-bottom: 60px;
 }
 
 .address {
@@ -331,24 +354,18 @@ footer {
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin-top: 20px;
+  margin-bottom: 9px;
 }
 .contact-data-footer a {
   color: rgba(255, 255, 255, 0.6);
-  color: var(--accent-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 .contact-data-footer a:hover {
   color: var(--active-accent);
-}
-
-.container {
-  width: 1200px;
-  margin: auto auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .visually-hidden {
@@ -362,16 +379,4 @@ footer {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-:root {
-  --primary-text-color: #212121;
-  --main-background-color: #f5f5f5;
-  --active-accent: #2196f3;
-  --text-link-color: #757575;
-  --hero-background: #2f303a;
-  --accent-color: #ffffff;
-  --inactive-buttons: #f5f4fa;
-  --portfolio-border: #eeeeee;
-  --footer-text: rgba(255, 255, 255, 0.6);
-  --header-line: #ececec;
 }
