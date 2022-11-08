@@ -138,11 +138,7 @@ main {
   text-align: center;
   padding: 200px 0px;
 }
-.hero-container {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .hero-title {
   color: var(--accent-color);
   text-align: center;
@@ -153,6 +149,9 @@ main {
   line-height: 1.4;
   vertical-align: top;
   margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 header,
 main {
@@ -249,7 +248,7 @@ main {
 .what-we-do {
   padding-top: 0%;
 }
-.h2-title {
+.section-title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -273,9 +272,7 @@ main {
 .team-section {
   background-color: var(--inactive-buttons);
 }
-.our-team-title {
-  padding-bottom: 50px;
-}
+
 .gallery-items {
   background-color: var(--accent-color);
   display: flex;
@@ -293,6 +290,7 @@ main {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.14);
+  padding-bottom: 30px;
 }
 .specialist:not(:last-child) {
   margin-right: 30px;
@@ -305,7 +303,7 @@ main {
   line-height: 1.2;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .our-team p {
   text-align: center;
@@ -313,7 +311,6 @@ main {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
 }
 .no-gap {
   display: block;
@@ -340,12 +337,14 @@ main {
   border: 1px solid var(--portfolio-border);
   padding: 20px 24px;
 }
-footer {
+.footer {
   background-color: var(--hero-background);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer .logo-picture {
+  margin-right: 0px;
+}
 .address {
   color: var(--accent-color);
   font-style: normal;
@@ -362,6 +361,8 @@ footer {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.email {
   margin-bottom: 9px;
 }
 .contact-data-footer a:hover {
