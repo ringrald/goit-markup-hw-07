@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body class="page">
     <header class="page-header">
       <div class="container header-container">
@@ -27,20 +28,34 @@
             <span style="color: #000000">Studio</span>
           </a>
           <ul class="site-nav list">
-            <li><a class="link current" href="./index.html">Студія</a></li>
-            <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link" href="">Контакти</a></li>
+            <li><a class="link-header current" href="./index.html">Студія</a></li>
+            <li><a class="link-header" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="link-header" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contact-data list">
-          <li class="data"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="data"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="data">
+            <a class="email-address for-icons" href="mailto:info@devstudio.com">
+              <svg class="header-icons" width="16">
+                <use href="./images/symbol-defs7.svg#icon-envelope-2-1"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="data">
+            <a class="phone-number" href="tel:+380961111111">
+              <svg class="header-icons" width="10">
+                <use href="./images/symbol-defs7.svg#icon-smartphone-2-1-1"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
       </div>
     </header>
     <main>
       <section class="hero-section section">
-        <div class="container hero-container">
+        <div class="container hero-container overlay">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-button">Замовити послугу</button>
         </div>
@@ -49,23 +64,44 @@
         <div class="container adv-we-do">
           <h2 class="visually-hidden">Переваги</h2>
           <ul class="advantages list">
-            <li class="advantage">
+            <li class="advantage first">
+              <div class="icon-back">
+                <svg class="icon-advantage" width="70" height="70">
+                  <use href="./images/symbol-defs7.svg#icon-antenna-opt"></use>
+                </svg>
+              </div>
               <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
               <p>Ідейні міркування, i навіть початок повсякденної роботи з формування позиції.</p>
             </li>
-            <li class="advantage">
+            <li class="advantage second">
+              <div class="icon-back">
+                <svg class="icon-advantage" width="70" height="70">
+                  <use href="./images/symbol-defs7.svg#icon-clock-opt"></use>
+                </svg>
+              </div>
               <h3>ПУНКТУАЛЬНІСТЬ</h3>
               <p>Завдання організації, особливо рамки i місце навчання кадрів тягне у себе</p>
             </li>
-            <li class="advantage">
+            <li class="advantage third">
+              <div class="icon-back">
+                <svg class="icon-advantage" width="70" height="70">
+                  <use href="./images/symbol-defs7.svg#icon-diagram-opt"></use>
+                </svg>
+              </div>
               <h3>ПЛАНУВАННЯ</h3>
               <p>Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-            <li class="advantage">
+            <li class="advantage forth">
+              <div class="icon-back">
+                <svg class="icon-advantage" width="70" height="70">
+                  <use href="./images/symbol-defs7.svg#icon-astronaut-opt"></use>
+                </svg>
+              </div>
               <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
           </ul>
+        </div>
       </section>
       <section class="section what-we-do">
         <div class="container">
@@ -109,24 +145,313 @@
               <img class="no-gap" src="./images/person1.jpg" alt="Продакт дизайнер" width="270" height="260" />
               <h3>Ігор Дем'яненко</h3>
               <p lang="en">Product Designer</p>
+              <ul class="list contact-list">
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Інстаграм Ігоря"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.instagram.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-instagram2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Твіттер Ігоря"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.twitter.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-twitter2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Фейсбук Ігоря"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.facebook.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-facebook2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Лінкедін Ігоря"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.linkedin.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="specialist">
               <img class="no-gap" src="./images/person2.jpg" alt="Фронтенд девелопер" width="270" height="260" />
 
               <h3>Ольга Рєпіна</h3>
               <p lang="en">Frontend Developer</p>
+              <ul class="list contact-list">
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Інстаграм Олі"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.instagram.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-instagram2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Твіттер Олі"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.twitter.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-twitter2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Фейсбук Олі"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.facebook.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-facebook2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Лінкедін Олі"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.linkedin.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="specialist">
               <img class="no-gap" src="./images/person3.jpg" alt="Маркетолог" width="270" height="260" />
 
               <h3>Микола Тарасов</h3>
               <p lang="en">Marketing</p>
+              <ul class="list contact-list">
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Інстаграм Миколи"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.instagram.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-instagram2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Твіттер Миколи"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.twitter.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-twitter2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Фейсбук Миколи"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.facebook.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-facebook2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Лінкедін Миколи"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.linkedin.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="specialist">
               <img class="no-gap" src="./images/person4.jpg" alt="Дизайнер" width="270" height="260" />
 
               <h3>Михайло Єрмаков</h3>
               <p lang="en">UI Designer</p>
+              <ul class="list contact-list">
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Інстаграм Михайла"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.instagram.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-instagram2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Твіттер Михайла"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.twitter.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-twitter2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Фейсбук Михайла"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.facebook.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-facebook2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contact-links">
+                  <a
+                    class="social-contact-list"
+                    target="_blank"
+                    aria-label="Лінкедін Михайла"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.linkedin.com/"
+                  >
+                    <svg class="social-contact" width="20" height="20">
+                      <use href="./images/symbol-defs7.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="our-partners">Постійні клієнти</h2>
+          <ul class="list partners-list">
+            <li class="partnership">
+              <a
+                class="link-to-partner"
+                href="/"
+                target="_blank"
+                aria-label="Компанія"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="partners-icons" width="106" height="60">
+                  <use href="./images/symbol-defs7.svg#icon-Logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="partnership">
+              <a
+                class="link-to-partner"
+                href="/"
+                target="_blank"
+                aria-label="Стартап"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="partners-icons" width="106" height="60">
+                  <use href="./images/symbol-defs7.svg#icon-Logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="partnership">
+              <a class="link-to-partner" href="/" target="_blank" aria-label="Бренд" rel="noopener noreferrer nofollow">
+                <svg class="partners-icons" width="106" height="60">
+                  <use href="./images/symbol-defs7.svg#icon-Logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="partnership">
+              <a class="link-to-partner" href="/" target="_blank" aria-label="Saas" rel="noopener noreferrer nofollow">
+                <svg class="partners-icons" width="106" height="60">
+                  <use href="./images/symbol-defs7.svg#icon-Logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="partnership">
+              <a
+                class="link-to-partner"
+                href="/"
+                target="_blank"
+                aria-label="Торговельна мережа"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="partners-icons" width="106" height="60">
+                  <use href="./images/symbol-defs7.svg#icon-Logo5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="partnership">
+              <a
+                class="link-to-partner"
+                href="/"
+                target="_blank"
+                aria-label="Корпорація"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="partners-icons" width="106" height="60">
+                  <use href="./images/symbol-defs7.svg#icon-Logo6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -134,15 +459,74 @@
     </main>
     <footer class="footer">
       <div class="container footer-content">
-        <a class="logo-picture" href="./index.html">
-          <span class="logo-web" style="color: #2196f3">Web</span>
-          <span style="color: #ffffff">Studio</span>
-        </a>
-        <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
-        <ul class="contact-data-footer list">
-          <li class="email"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        <div class="footer-left">
+          <ul class="list footer-first-part">
+            <li>
+              <a class="logo-picture" href="./index.html">
+                <span class="logo-web" style="color: #2196f3">Web</span>
+                <span style="color: #ffffff">Studio</span>
+              </a>
+            </li>
+          </ul>
+          <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+          <ul class="contact-data-footer list">
+            <li class="email"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p class="join">ПРИЄДНУЙТЕСЬ</p>
+          <ul class="list media-list">
+            <li class="icon instagram media">
+              <a
+                target="_blank"
+                aria-label="Наш інстаграм"
+                rel="noopener noreferrer nofollow"
+                href="https://www.instagram.com/"
+              >
+                <svg class="media-icons" width="20" height="20">
+                  <use href="./images/symbol-defs7.svg#icon-instagram2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon twitter media">
+              <a
+                target="_blank"
+                aria-label="Наш твіттер"
+                rel="noopener noreferrer nofollow"
+                href="https://twitter.com/"
+              >
+                <svg class="media-icons" width="20" height="20">
+                  <use href="./images/symbol-defs7.svg#icon-twitter2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon facebook media">
+              <a
+                target="_blank"
+                aria-label="Наш фейсбук"
+                rel="noopener noreferrer nofollow"
+                href="https://www.facebook.com/"
+              >
+                <svg class="media-icons" width="20" height="20">
+                  <use href="./images/symbol-defs7.svg#icon-facebook2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon linkedin media">
+              <a
+                target="_blank"
+                aria-label="Наш лінкедін"
+                rel="noopener noreferrer nofollow"
+                href="https://www.linkedin.com/"
+              >
+                <svg class="media-icons" width="20" height="20">
+                  <use href="./images/symbol-defs7.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

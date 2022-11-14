@@ -27,14 +27,28 @@
             <span style="color: #000000">Studio</span>
           </a>
           <ul class="site-nav list">
-            <li><a class="link current" href="./index.html">Студія</a></li>
-            <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link" href="">Контакти</a></li>
+            <li><a class="link-header" href="./index.html">Студія</a></li>
+            <li><a class="link-header current" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="link-header" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contact-data list">
-          <li class="data"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="data"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="data">
+            <a class="email-address for-icons" href="mailto:info@devstudio.com">
+              <svg class="header-icons" width="16">
+                <use href="./images/symbol-defs5.svg#icon-envelope-2-1"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="data">
+            <a class="phone-number" href="tel:+380961111111">
+              <svg class="header-icons" width="10">
+                <use href="./images/symbol-defs5.svg#icon-smartphone-2-1-1"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -50,7 +64,7 @@
             <li><button class="examples-marketing" type="button">Маркетинг</button></li>
           </ul>
           <ul class="gallery-items list">
-            <li>
+            <li class="portfolio-item">
               <a href="">
                 <img class="no-gap" src="./images/portfolio1.jpg" alt="Лаптоп" width="370" height="294" />
                 <div class="border">
@@ -59,7 +73,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="">
                 <img class="no-gap" src="./images/portfolio2.jpg" alt="Баскетболісти" width="370" height="294" />
                 <div class="border">
@@ -71,7 +85,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="">
                 <img class="no-gap" src="./images/portfolio3.jpg" alt="Ресторан" width="370" height="294" />
                 <div class="border">
@@ -83,7 +97,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="">
                 <img class="no-gap" src="./images/portfolio4.jpg" alt="Навушники" width="370" height="294" />
                 <div class="border">
@@ -95,7 +109,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="">
                 <img
                   class="no-gap"
@@ -113,7 +127,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="">
                 <img class="no-gap" src="./images/portfolio6.jpg" alt="Екран від Аймака" width="370" height="294" />
                 <div class="border">
@@ -122,7 +136,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="">
                 <img class="no-gap" src="./images/portfolio7.jpg" alt="Журнал" width="370" height="294" />
                 <div class="border">
@@ -134,7 +148,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="">
                 <img class="no-gap" src="./images/portfolio8.jpg" alt="Мінімалізм" width="370" height="294" />
                 <div class="border">
@@ -146,7 +160,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a href="">
                 <img class="no-gap" src="./images/portfolio9.jpg" alt="Розвиток бізнесу" width="370" height="294" />
                 <div class="border">
@@ -161,15 +175,74 @@
     </main>
     <footer class="footer">
       <div class="container footer-content">
-        <a class="logo-picture" href="./index.html">
-          <span class="logo-web" style="color: #2196f3">Web</span>
-          <span style="color: #ffffff">Studio</span>
-        </a>
-        <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
-        <ul class="contact-data-footer list">
-          <li class="email"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        <div class="footer-left">
+          <ul class="list footer-first-part">
+            <li>
+              <a class="logo-picture" href="./index.html">
+                <span class="logo-web" style="color: #2196f3">Web</span>
+                <span style="color: #ffffff">Studio</span>
+              </a>
+            </li>
+          </ul>
+          <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+          <ul class="contact-data-footer list">
+            <li class="email"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p class="join">ПРИЄДНУЙТЕСЬ</p>
+          <ul class="list media-list">
+            <li class="icon instagram media">
+              <a
+                target="_blank"
+                aria-label="Наш інстаграм"
+                rel="noopener noreferrer nofollow"
+                href="https://www.instagram.com/"
+              >
+                <svg class="media-icons" width="20" height="20">
+                  <use href="./images/symbol-defs7.svg#icon-instagram2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon twitter media">
+              <a
+                target="_blank"
+                aria-label="Наш твіттер"
+                rel="noopener noreferrer nofollow"
+                href="https://twitter.com/"
+              >
+                <svg class="media-icons" width="20" height="20">
+                  <use href="./images/symbol-defs7.svg#icon-twitter2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon facebook media">
+              <a
+                target="_blank"
+                aria-label="Наш фейсбук"
+                rel="noopener noreferrer nofollow"
+                href="https://www.facebook.com/"
+              >
+                <svg class="media-icons" width="20" height="20">
+                  <use href="./images/symbol-defs7.svg#icon-facebook2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon linkedin media">
+              <a
+                target="_blank"
+                aria-label="Наш лінкедін"
+                rel="noopener noreferrer nofollow"
+                href="https://www.linkedin.com/"
+              >
+                <svg class="media-icons" width="20" height="20">
+                  <use href="./images/symbol-defs7.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
