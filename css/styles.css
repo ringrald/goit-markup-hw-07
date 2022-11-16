@@ -24,8 +24,9 @@ html {
   color: var(--primary-text-color);
   font-family: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   margin: 0;
+  font-size: 14px;
 }
 a {
   text-decoration-line: none;
@@ -78,7 +79,6 @@ main {
 
 .logo-picture {
   font-family: Raleway, sans-serif;
-  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -100,7 +100,6 @@ main {
 .site-nav a {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.35;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -131,7 +130,6 @@ main {
 .contact-data a {
   color: var(--text-link-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.35;
 }
 .for-icons {
@@ -149,10 +147,6 @@ main {
 }
 .header-icons:hover {
   fill: currentColor;
-}
-
-.our-team p {
-  color: var(--text-link-color);
 }
 
 .hero-section {
@@ -232,7 +226,6 @@ main {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  letter-spacing: 0.03em;
   text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
@@ -243,18 +236,16 @@ main {
 .portfolio-examples button:focus {
   color: var(--accent-color);
   background-color: var(--active-accent);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-item-link {
+  display: block;
 }
-
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .advantages {
   display: flex;
   flex-wrap: wrap;
@@ -285,20 +276,13 @@ main {
 }
 
 .advantages h3 {
-  text-align: left;
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 .advantages p {
   text-align: left;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 .what-we-do {
@@ -309,7 +293,6 @@ main {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
@@ -352,21 +335,20 @@ main {
   margin-right: 30px;
 }
 
-.our-team h3 {
+.team-name {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   margin-bottom: 10px;
   margin-top: 30px;
 }
-.our-team p {
+.team-position {
   text-align: center;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
+  color: var(--text-link-color);
+  margin-bottom: 16px;
 }
 .no-gap {
   display: block;
@@ -388,7 +370,8 @@ main {
 }
 
 .partnership:hover .partners-icons {
-  fill: #2196f3;
+  fill: var(--active-accent);
+  outline: none;
 }
 
 .link-to-partner {
@@ -400,15 +383,17 @@ main {
   justify-content: center;
   align-items: center;
   display: flex;
+  color: #afb1b8;
 }
 
 .link-to-partner:hover,
 .link-to-partner:focus {
-  border: 1px solid #2196f3;
-  color: #2196f3;
+  border: 1px solid var(--active-accent);
+  color: var(--active-accent);
+  outline: none;
 }
 .partners-icons {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .partners-icons:hover,
 .partners-icons:focus {
@@ -419,7 +404,6 @@ main {
   text-align: center;
   font-size: 36px;
   line-height: 1.16666666667;
-  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
@@ -439,10 +423,8 @@ main {
   margin-bottom: 4px;
 }
 .gallery-items p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
 }
 
 .border {
@@ -465,24 +447,19 @@ main {
 .address {
   color: var(--accent-color);
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   margin-top: 20px;
   margin-bottom: 9px;
 }
 .contact-data-footer a {
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 .email {
   margin-bottom: 9px;
 }
-.contact-data-footer a:hover {
+.contact-data-footer a:hover,
+.contact-data-footer a:focus {
   color: var(--active-accent);
 }
 
@@ -499,10 +476,10 @@ main {
   margin: -1px;
 }
 .footer-right {
-  font-size: 14px;
   font-weight: 700;
-  color: #ffffff;
-  margin-left: 156px;
+  color: var(--accent-color);
+  margin-left: 70px;
+  min-width: 231px;
 }
 
 .join {
@@ -516,7 +493,10 @@ main {
 .media {
   width: 44px;
   height: 44px;
-  margin: top 30px;
+}
+.media-links {
+  width: 100%;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   column-gap: 10px;
@@ -526,21 +506,30 @@ main {
   justify-content: center;
   align-items: center;
 }
-.media:hover {
-  background-color: #2196f3;
+.media-links:hover,
+.media-links:focus {
+  background-color: var(--active-accent);
 }
 .media-icons {
-  fill: white;
+  fill: var(--accent-color);
 }
-
-.contact-links {
-  width: 44px;
-  height: 44px;
-  margin-top: 16px;
+.social-contact-list {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.social-contact-list:hover,
+.social-contact-list:focus {
+  background-color: var(--active-accent);
+  fill: var(--accent-color);
+  color: var(--accent-color);
+}
+.contact-links {
+  width: 44px;
+  height: 44px;
 }
 .contact-list {
   display: flex;
@@ -549,12 +538,8 @@ main {
   justify-content: center;
   align-items: center;
 }
-.contact-links:hover,
-.contact-links:focus {
-  background-color: #2196f3;
-}
 
 .contact-links:hover .social-contact,
 .contact-links:focus .social-contact {
-  fill: white;
+  fill: var(--accent-color);
 }
