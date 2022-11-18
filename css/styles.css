@@ -22,8 +22,7 @@ html {
 
 .page {
   color: var(--primary-text-color);
-  font-family: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   margin: 0;
   font-size: 14px;
@@ -84,6 +83,7 @@ main {
   line-height: 1.2;
   vertical-align: top;
   margin-right: 93px;
+  color: #000;
 }
 .logo-web {
   margin-right: -6px;
@@ -104,6 +104,7 @@ main {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+  letter-spacing: 0.02em;
 }
 .site-nav a:hover,
 .contact-data a:hover {
@@ -122,6 +123,7 @@ main {
   display: flex;
   margin-left: auto;
   align-items: center;
+  letter-spacing: 0.02em;
 }
 .contact-data .data + .data {
   margin-left: 50px;
@@ -131,6 +133,7 @@ main {
   color: var(--text-link-color);
   font-weight: 500;
   line-height: 1.35;
+  letter-spacing: 0.02em;
 }
 .for-icons {
   display: block;
@@ -274,9 +277,9 @@ main {
   line-height: 1.2;
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 .advantages p {
-  text-align: left;
   line-height: 1.7;
 }
 
@@ -285,7 +288,6 @@ main {
 }
 .section-title {
   text-align: center;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   margin-bottom: 50px;
@@ -406,7 +408,6 @@ main {
 }
 .gallery-items h2 {
   color: var(--primary-text-color);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -427,6 +428,14 @@ main {
   padding-bottom: 60px;
 }
 
+.footer-logo-picture {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  vertical-align: top;
+}
 .footer-content {
   display: flex;
   align-items: baseline;
@@ -529,9 +538,4 @@ main {
   gap: 10px;
   justify-content: center;
   align-items: center;
-}
-
-.contact-links:hover .social-contact,
-.contact-links:focus .social-contact {
-  fill: var(--accent-color);
 }
