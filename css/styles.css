@@ -26,6 +26,7 @@ html {
   letter-spacing: 0.03em;
   margin: 0;
   font-size: 14px;
+  padding-top: 80px;
 }
 a {
   text-decoration-line: none;
@@ -70,10 +71,16 @@ main {
 .bar {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 .page-header {
+  position: fixed;
   background-color: var(--accent-color);
   border-bottom: 1px solid var(--header-line);
+  z-index: 1;
+  width: 100%;
+  top: 0%;
+  left: 0%;
 }
 
 .logo-picture {
@@ -105,6 +112,9 @@ main {
   padding-bottom: 32px;
   display: block;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav a:hover,
 .contact-data a:hover {
@@ -119,6 +129,41 @@ main {
 .site-nav .link-header.current {
   color: var(--active-accent);
 }
+
+.link-header {
+  position: relative;
+}
+.link-header::after {
+  content: '';
+  display: block;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-header:hover::after,
+.link-header:focus::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--active-accent);
+  border-radius: 2px;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+}
+
+.link-header.current::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--active-accent);
+  border-radius: 2px;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+}
+
 .contact-data {
   display: flex;
   margin-left: auto;
@@ -134,6 +179,9 @@ main {
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .for-icons {
   display: block;
@@ -188,7 +236,6 @@ main {
 .hero-button {
   color: var(--accent-color);
   background-color: var(--active-accent);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
@@ -200,11 +247,12 @@ main {
   border-radius: 4px;
   border: 0em;
   padding: 10px 32px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--accent-color);
-  background-color: var(--active-accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -229,6 +277,9 @@ main {
   padding: 6px 22px;
   min-width: 73px;
   border: 1px solid transparent;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-examples button:hover,
 .portfolio-examples button:focus {
@@ -239,11 +290,39 @@ main {
 
 .portfolio-item-link {
   display: block;
+  transition-property: box-shadow;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item-link:hover,
 .portfolio-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.portfolio-item-c {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-overlay {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  color: var(--accent-color);
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.portfolio-item-link:hover .portfolio-overlay,
+.portfolio-item-link:focus .portfolio-overlay {
+  opacity: 1;
+  transform: translatey(0%);
+}
+
 .advantages {
   display: flex;
   flex-wrap: wrap;
@@ -269,7 +348,7 @@ main {
 }
 
 .advantages p,
-.gallery-items p {
+.item-name {
   color: var(--text-link-color);
 }
 
@@ -305,6 +384,28 @@ main {
   margin-right: 0%;
 }
 
+.container-act {
+  position: relative;
+}
+.overlay-adv {
+  position: absolute;
+  display: flex;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  color: var(--accent-color);
+  font-weight: 700;
+  opacity: 0;
+  transition: 300ms opacity linear;
+}
+
+.actions:hover .overlay-adv {
+  opacity: 1;
+}
+
 .team-section {
   background-color: var(--inactive-buttons);
 }
@@ -314,6 +415,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  color: #2196f3;
 }
 
 .our-team {
@@ -376,6 +478,9 @@ main {
   align-items: center;
   display: flex;
   color: #afb1b8;
+  transition-property: border, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-to-partner:hover,
@@ -386,6 +491,9 @@ main {
 }
 .partners-icons {
   fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .partners-icons:hover,
 .partners-icons:focus {
@@ -453,6 +561,9 @@ main {
 .contact-data-footer a {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.7;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .email {
   margin-bottom: 9px;
@@ -504,6 +615,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .media-links:hover,
 .media-links:focus {
@@ -520,6 +634,9 @@ main {
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-contact-list:hover,
@@ -538,4 +655,39 @@ main {
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.pop-up {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+}
+.button-close {
+  right: 8px;
+  top: 8px;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  display: block;
+  padding: 0%;
 }

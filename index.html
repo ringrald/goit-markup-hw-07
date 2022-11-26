@@ -25,9 +25,15 @@
         <span style="color: #2196f3">Web</span>Studio
       </a>
           <ul class="site-nav list">
-            <li><a class="link-header current" href="./index.html">Студія</a></li>
-            <li><a class="link-header" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link-header" href="">Контакти</a></li>
+            <li>
+              <a class="link-header current" href="./index.html">Студія</a>
+            </li>
+            <li>
+              <a class="link-header" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="link-header" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="contact-data list">
@@ -54,7 +60,7 @@
       <section class="hero-section section">
         <div class="container overlay">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
         </div>
       </section>
       <section class="section">
@@ -105,13 +111,29 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list what-we-do-img">
             <li class="actions">
-              <img class="no-gap" src="./images/section3_img1.jpg" alt="Лаптоп, планшет і клавіатура" width="370" height="294" />
+              <div class="container-act">
+                <img class="no-gap" src="./images/section3_img1.jpg" alt="Лаптоп, планшет і клавіатура" width="370" height="294" />
+
+                <div class="overlay-adv">
+                  <p class="actions-text">ДЕСКТОПНІ ДОДАТКИ</p>
+                </div>
+              </div>
             </li>
             <li class="actions">
-              <img class="no-gap" src="./images/section3_img2.jpg" alt="Телефон, дошка і планшет" width="370" height="294" />
+              <div class="container-act">
+                <img class="no-gap" src="./images/section3_img2.jpg" alt="Телефон, дошка і планшет" width="370" height="294" />
+                <div class="overlay-adv">
+                  <p class="actions-text">МОБІЛЬНІ ДОДАТКИ</p>
+                </div>
+              </div>
             </li>
             <li class="actions">
-              <img class="no-gap" src="./images/section3_img3.jpg" alt="Планшет з кольоровою палітрою" width="370" height="294" />
+              <div class="container-act">
+                <img class="no-gap" src="./images/section3_img3.jpg" alt="Планшет з кольоровою палітрою" width="370" height="294" />
+                <div class="overlay-adv">
+                  <p class="actions-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -464,5 +486,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="pop-up">
+        <button data-modal-close class="button-close" type="button">
+          <svg class="close-icon" width="30" height="30px"><use href="./images/symbol-defs7.svg#icon-close"></use></svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
