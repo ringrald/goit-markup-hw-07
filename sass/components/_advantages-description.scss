@@ -1,0 +1,19 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage__description,
+.item-name {
+  color: $text-link-color;
+}
+
+.advantage__title {
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.advantage__description {
+  line-height: 1.7;
+}

@@ -1,0 +1,40 @@
+.footer-left {
+  min-width: 231px;
+}
+.footer-logo-picture {
+  color: $accent-color;
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  vertical-align: top;
+}
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+.footer .logo-picture {
+  margin-right: 0px;
+}
+.address {
+  color: $accent-color;
+  font-style: normal;
+  line-height: 1.7;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.contact-data-footer a {
+  color: $footer-text;
+  line-height: 1.7;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $active-accent;
+  }
+}
+.email {
+  margin-bottom: 9px;
+}

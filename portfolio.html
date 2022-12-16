@@ -13,34 +13,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
-    <header class="page-header">
-      <div class="container header-container">
-        <nav class="bar">
+    <!--BEM added -->
+
+    <header class="header">
+      <div class="container header__content">
+        <nav class="header__bar">
           <!-- prettier-ignore -->
-          <a class="logo-picture" href="./index.html">
+          <a class="logo" href="./index.html">
         <span style="color: #2196f3">Web</span>Studio
       </a>
           <ul class="site-nav list">
-            <li><a class="link-header" href="./index.html">Студія</a></li>
-            <li><a class="link-header current" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link-header" href="">Контакти</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="contact-data list">
-          <li class="data">
-            <a class="email-address for-icons" href="mailto:info@devstudio.com">
-              <svg class="header-icons" width="16">
+          <li class="contact-data__item">
+            <a class="contact-data__email-address contact-data__link" href="mailto:info@devstudio.com">
+              <svg class="contact-data__icon" width="16">
                 <use href="./images/symbol-defs7.svg#icon-envelope-2-1"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="data">
-            <a class="phone-number" href="tel:+380961111111">
-              <svg class="header-icons" width="10">
+          <li class="contact-data__item">
+            <a class="contact-data__phone-number contact-data__link" href="tel:+380961111111">
+              <svg class="contact-data__icon" width="10">
                 <use href="./images/symbol-defs7.svg#icon-smartphone-2-1-1"></use>
               </svg>
               +38 096 111 11 11
@@ -54,11 +62,11 @@
         <div class="container">
           <h1 class="visually-hidden">Наші приклади</h1>
           <ul class="portfolio-examples list">
-            <li><button class="examples-all" type="button">Усі</button></li>
-            <li><button class="examples-websites" type="button">Веб-сайти</button></li>
-            <li><button class="examples-apps" type="button">Додатки</button></li>
-            <li><button class="examples-design" type="button">Дизайн</button></li>
-            <li><button class="examples-marketing" type="button">Маркетинг</button></li>
+            <li><button class="portfolio__button" type="button">Усі</button></li>
+            <li><button class="portfolio__button" type="button">Веб-сайти</button></li>
+            <li><button class="portfolio__button" type="button">Додатки</button></li>
+            <li><button class="portfolio__button" type="button">Дизайн</button></li>
+            <li><button class="portfolio__button" type="button">Маркетинг</button></li>
           </ul>
           <ul class="gallery-items list">
             <li class="portfolio-item">
