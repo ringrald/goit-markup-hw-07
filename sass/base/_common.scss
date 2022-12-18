@@ -1,0 +1,16 @@
+.page {
+  color: $primary-text-color;
+  font-family: $font-main;
+  letter-spacing: 0.03em;
+  margin: 0;
+  font-size: 14px;
+  padding-top: 80px;
+  background-color: $main-background-color;
+}
+
+.container {
+  width: 1200px;
+  margin: auto auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

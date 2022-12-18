@@ -3,13 +3,13 @@
   margin-left: auto;
   align-items: center;
   letter-spacing: 0.02em;
+  color: $text-link-color;
 }
 .contact-data__item {
   margin-left: 50px;
 }
 
 .contact-data__link {
-  color: $text-link-color;
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: 0.02em;

@@ -1,0 +1,24 @@
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.companies__brand {
+  width: 170px;
+  height: 92px;
+}
+
+
+.our-partners__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16666666667;
+  margin-bottom: 50px;
+}
+
+.our-partners__icon {
+  .companies__brand & {
+    fill: $active-accent;
+  }
+}
